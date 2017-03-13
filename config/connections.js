@@ -42,9 +42,9 @@ module.exports.connections = {
   ***************************************************************************/
   ica2_mysql: {
     adapter: 'sails-mysql',
-    host: '158.37.63.52',
+    host: '158.37.63.86',
     user: 'is213',
-    password: 'trygtPassord1.5',
+    password: 'safepass1.5',
     database: 'ica2'
   },
 

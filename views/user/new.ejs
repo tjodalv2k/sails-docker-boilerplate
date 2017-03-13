@@ -1,0 +1,38 @@
+<center>
+<form action="/user/create" method="POST" >
+  <h2>Sign Up</h2>
+
+
+  <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+    <input class="mdl-textfield__input" type="text" name="name" id="name">
+    <label class="mdl-textfield__label" for="name">Name..</label>
+  </div><br />
+
+  <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+    <input class="mdl-textfield__input" type="text" name="username" id="username">
+    <label class="mdl-textfield__label" for="name">Username..</label>
+  </div><br />
+
+  <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+    <input class="mdl-textfield__input" type="email" name="email" id="email">
+    <label class="mdl-textfield__label" for="email">Email..</label>
+  </div><br />
+
+  <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+    <input class="mdl-textfield__input" type="text" name="country" id="country">
+    <label class="mdl-textfield__label" for="name">Country..</label>
+  </div><br />
+
+  <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">Register</button>
+</form>
+  <br>
+  <a href="" onclick="goBack()" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+    <i class="material-icons">navigate_before</i>
+  </a>
+
+  <script>
+    function goBack() {
+      window.history.back();
+    }
+  </script>
+</center>

@@ -1,0 +1,53 @@
+<center>
+
+  <style>
+    .demo-card-wide.mdl-card {
+      width: 512px;
+    }
+
+    .demo-card-wide > .mdl-card__title {
+      color: #000000;
+      height: 176px;
+      background: #000000;
+    }
+
+    .demo-card-wide > .mdl-card__menu {
+      color: #000000;
+    }
+  </style>
+  <br/>
+  <div class="demo-card-wide mdl-card mdl-shadow--2dp">
+    <div class="mdl-card__title">
+      <h2 color="black" class="mdl-card__title-text"><%= user.name %></h2>
+    </div>
+    <div class="mdl-card__supporting-text">
+      <b>Username:</b> <%= user.username %><br>
+      <b>Email:</b> <%= user.email %><br>
+      <b>Country:</b> <%= user.country %><br>
+    </div>
+    <div class="mdl-card__actions mdl-card--border">
+      <a href="/user/edit/<%= user.id %>"
+         class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+        Edit
+      </a>
+      <div class="mdl-layout-spacer"></div>
+      <a href="" onclick="goBack()" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+        <i class="material-icons">navigate_before</i>
+      </a>
+
+      <script>
+        function goBack() {
+          window.history.back();
+        }
+      </script>
+    </div>
+    <div class="mdl-card__menu">
+      <a href="/user/edit/<%= user.id %>">
+        <button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
+          <i class="material-icons">mode_edit</i>
+        </button>
+      </a>
+    </div>
+  </div>
+</center>
+
